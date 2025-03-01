@@ -6,14 +6,14 @@ import Pic from "../../../public/images/pic.jpg";
 export function HeroSection() {
   return (
     <section className="py-12 md:py-24 lg:py-20 bg-muted/50">
-      <div className="container px-4 md:px-6">
+      <div className="container m-auto px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_450px]">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-1">
               <h1 className="text-xl font-bold tracking-tighter sm:text-2xl xl:text-3xl/none">
                 Hi, I'm Umar
               </h1>
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+              <h1 className="text-3xl mb-6 font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 Full Stack Developer
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">

@@ -159,7 +159,7 @@ export function SkillsSection() {
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 bg-primary/10 rounded-full blur-3xl animate-blob animation-delay-4000" />
       </div>
 
-      <div className="container relative px-4 md:px-6">
+      <div className="container m-auto relative px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -167,7 +167,7 @@ export function SkillsSection() {
             viewport={{ once: true }}
             className="space-y-2"
           >
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+            <h2 className="text-3xl mb-6 font-bold tracking-tighter sm:text-5xl md:text-6xl">
               Technical Skills
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
