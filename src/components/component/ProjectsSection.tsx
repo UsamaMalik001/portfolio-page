@@ -207,7 +207,7 @@ export function ProjectsSection() {
               Featured Projects
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              A selection of projects I've worked on throughout my career.
+              A selection of projects I&apos;ve worked on throughout my career.
             </p>
           </div>
         </div>

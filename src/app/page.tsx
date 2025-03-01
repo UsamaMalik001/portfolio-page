@@ -6,7 +6,11 @@ import { ExperienceSection } from "@/components/component/ExperienceSection";
 import { ProjectsSection } from "@/components/component/ProjectsSection";
 import { ContactSection } from "@/components/component/ContactSection";
 import { Footer } from "@/components/component/Footer";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: `Umar Farooq - 5+ Years in Web & Mobile Dev`,
+};
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">

@@ -171,8 +171,8 @@ export function SkillsSection() {
               Technical Skills
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              A comprehensive set of technologies I've worked with throughout my
-              career.
+              A comprehensive set of technologies I&apos;ve worked with
+              throughout my career.
             </p>
           </motion.div>
         </div>
@@ -182,7 +182,7 @@ export function SkillsSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid gap-6 md:grid-cols-2 lg:grid-cols-4"
+          className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:gap-12"
         >
           <SkillGroup
             title="Frontend"

@@ -11,7 +11,7 @@ export function HeroSection() {
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-1">
               <h1 className="text-xl font-bold tracking-tighter sm:text-2xl xl:text-3xl/none">
-                Hi, I'm Umar
+                Hi, I&apos;m Umar
               </h1>
               <h1 className="text-3xl mb-6 font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 Full Stack Developer

@@ -5,7 +5,7 @@ import { Github, Linkedin } from "lucide-react";
 export function Navbar() {
   return (
     <header className="sticky px-4 top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container m-auto px-2 flex h-16 items-center justify-between">
+      <div className="container m-auto flex h-16 items-center justify-between px-4 md:px-6">
         <div className="font-bold text-xl">
           <Link href="/">Portfolio</Link>
         </div>

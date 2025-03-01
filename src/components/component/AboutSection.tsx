@@ -18,7 +18,7 @@ export function AboutSection() {
         <div className="mx-auto grid max-w-3xl gap-8 py-12">
           <div className="space-y-4">
             <p className="text-muted-foreground">
-              I'm a frontend and mobile developer with over 5 years of
+              I&apos;m a frontend and mobile developer with over 5 years of
               experience building web and mobile applications. My journey began
               as a junior frontend developer, where I honed my skills in HTML,
               CSS, and JavaScript. As I progressed in my career, I expanded my
@@ -33,14 +33,14 @@ export function AboutSection() {
               appealing and intuitive to use.
             </p>
             <p className="text-muted-foreground">
-              Throughout my career, I've worked on a diverse range of projects,
-              from food ordering platforms to real estate dashboards and
-              marketplace applications. This variety has given me a broad
+              Throughout my career, I&apos;ve worked on a diverse range of
+              projects, from food ordering platforms to real estate dashboards
+              and marketplace applications. This variety has given me a broad
               perspective and the ability to adapt to different project
               requirements and challenges.
             </p>
             <p className="text-muted-foreground">
-              I'm passionate about staying up-to-date with the latest
+              I&apos;m passionate about staying up-to-date with the latest
               technologies and best practices in frontend and mobile
               development. I enjoy solving complex problems and continuously
               learning new skills to improve my craft.
