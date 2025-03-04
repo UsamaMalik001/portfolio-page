@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   title: "Web & Mobile Developer | React, Next.js, Flutter",
   description:
     "Experienced developer crafting responsive & user-friendly applications.",
-  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({
