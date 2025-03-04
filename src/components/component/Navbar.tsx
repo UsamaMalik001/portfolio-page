@@ -46,7 +46,7 @@ export function Navbar() {
             Portfolio
           </Link>
           <nav className="hidden md:absolute md:left-1/2 md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
-            <div className="flex items-center gap-10 font-medium">
+            <div className="flex items-center gap-6 font-medium">
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
                 href={siteConfig.baseLinks.about}
@@ -108,7 +108,10 @@ export function Navbar() {
             open ? "opacity-100 h-auto visible" : "opacity-0 h-0 invisible"
           )}
         >
-          <ul className="space-y-3.5 font-medium" onClick={() => setOpen(false)}>
+          <ul
+            className="space-y-3.5 font-medium"
+            onClick={() => setOpen(false)}
+          >
             <li>
               <Link href={siteConfig.baseLinks.about}>About</Link>
             </li>

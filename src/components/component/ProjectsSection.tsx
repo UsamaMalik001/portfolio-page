@@ -121,8 +121,9 @@ const techIcons: Record<string, Technology> = {
 interface ProjectCardProps {
   title: string;
   description: string;
-  icon: React.ReactNode;
   technologies: string[];
+  coverImagePath: string;
+  logoPath: string;
 }
 
 function TechBadge({ name }: { name: string }) {
@@ -167,33 +168,33 @@ function TechBadge({ name }: { name: string }) {
 function ProjectCard({
   title,
   description,
-  icon,
   technologies,
+  coverImagePath,
+  logoPath,
 }: ProjectCardProps) {
-  const getImagePath = (title: string) => {
-    const paths = {
-      Orderspot: "/order-img.jpg",
-      "True Gaming": "/banner.jpg",
-      "Ware Friday": "/business.jpg",
-      "Double Parked": "/double-parked-banner.jpg",
-      "Maum Market App": "/market.jpeg",
-      "Real Estate Dashboard": "/realestate.jpg",
-      "Landing Pages": "/landing page banner.jpg",
-      "Food Ordering Platform": "/food-ordering.jpg",
-    };
-
-    return (paths as Record<string, string>)[title] || "/placeholder.png";
-  };
   return (
     <Card className="overflow-hidden group shadow-xl">
       <CardContent className="p-6">
         <div className="flex items-center gap-2 mb-4">
-          {icon}
+          <div className="relative w-12 h-12 overflow-hidden rounded-md bg-muted/30 flex items-center justify-center">
+            <Image
+              src={logoPath || "/placeholder.svg"}
+              alt={`${title} logo`}
+              width={48}
+              height={48}
+              className="object-contain"
+              onError={(e) => {
+                // Fallback for missing logos
+                const target = e.target as HTMLImageElement;
+                target.src = "/logo-placeholder.png";
+              }}
+            />
+          </div>
           <h3 className="text-xl font-bold">{title}</h3>
         </div>
         <div className="relative aspect-[16/9] mb-4 overflow-hidden rounded-md bg-muted/50">
           <Image
-            src={getImagePath(title) || "/placeholder.svg"}
+            src={coverImagePath || "/placeholder.svg"}
             fill
             alt={`${title} screenshot`}
             className="rounded-md object-cover w-full h-48 mb-4 transition-transform duration-300 group-hover:scale-105"
@@ -231,57 +232,65 @@ export function ProjectsSection() {
       title: "Food Ordering Platform",
       description:
         "A comprehensive food ordering platform with merchant dashboard, orders management system, and customer-facing storefront.",
-      icon: <Monitor className="h-5 w-5 text-primary" />,
       technologies: ["React", "React Native", "Redux"],
+      coverImagePath: "/food-ordering.jpg",
+      logoPath: "/food-logo.png",
     },
     {
       title: "Maum Market App",
       description:
         "A Flutter-based marketplace application with product listings, user profiles, and secure payment processing.",
-      icon: <Smartphone className="h-5 w-5 text-primary" />,
       technologies: ["Flutter", "Dart", "Firebase"],
+      coverImagePath: "/market.jpeg",
+      logoPath: "/market-logo.png",
     },
     {
       title: "Real Estate Dashboard",
       description:
         "A comprehensive dashboard for real estate agents to manage listings, client interactions, and property analytics.",
-      icon: <Monitor className="h-5 w-5 text-primary" />,
       technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      coverImagePath: "/realestate.jpg",
+      logoPath: "/real-estate.png",
     },
     {
       title: "Landing Pages",
       description:
         "Collection of high-converting landing pages for various clients including Double Parked, True Gaming, and Crave.",
-      icon: <Monitor className="h-5 w-5 text-primary" />,
       technologies: ["HTML", "CSS", "JavaScript"],
+      coverImagePath: "/landing page banner.jpg",
+      logoPath: "/landing-page.jpg",
     },
     {
       title: "True Gaming",
       description:
         "A comprehensive gaming platform revolutionizing the gaming industry.",
-      icon: <Gamepad2 className="h-5 w-5 text-primary" />,
       technologies: ["React JS", "TypeScript"],
+      coverImagePath: "/banner.jpg",
+      logoPath: "/true-gaming-logo.png",
     },
     {
       title: "Ware Friday",
       description:
         "A comprehensive consulting platform revolutionizing the consulting industry.",
-      icon: <BriefcaseBusiness className="h-5 w-5 text-primary" />,
       technologies: ["React JS", "TypeScript"],
+      coverImagePath: "/business.jpg",
+      logoPath: "/ware-friday-logo.png",
     },
     {
       title: "Orderspot",
       description:
         "A comprehensive ordering platform revolutionizing the ordering industry.",
-      icon: <Package className="h-5 w-5 text-primary" />,
       technologies: ["React JS", "TypeScript"],
+      coverImagePath: "/order-img.jpg",
+      logoPath: "/orderspot-logo.png",
     },
     {
       title: "Double Parked",
       description:
         "A comprehensive booking platform revolutionizing the booking industry.",
-      icon: <Car className="h-5 w-5 text-primary" />,
       technologies: ["React JS", "TypeScript"],
+      coverImagePath: "/double-parked-banner.jpg",
+      logoPath: "/double-parked-logo.png",
     },
   ];
   return (
