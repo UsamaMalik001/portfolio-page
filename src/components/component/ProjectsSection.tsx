@@ -28,7 +28,6 @@ import {
   SiDart,
 } from "react-icons/si";
 import { motion } from "framer-motion";
-import TrueGamingPic from "../../../public/Project Assets/true-gaming.jpeg";
 
 const container = {
   hidden: { opacity: 0 },
@@ -153,8 +152,8 @@ function TechBadge({ name }: { name: string }) {
         {/* Hover effect */}
         <div
           className="
-            absolute inset-0 rounded-lg opacity-0 
-            group-hover:opacity-100 transition-opacity 
+            absolute inset-0 rounded-lg opacity-0
+            group-hover:opacity-100 transition-opacity
             duration-300 pointer-events-none
             bg-gradient-to-r from-[var(--tech-color)] via-transparent to-transparent
           "
