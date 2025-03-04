@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 export function ContactSection() {
   return (
     <section id="contact" className="py-12 md:py-24 lg:py-32 bg-muted/50">
-      <div className="container m-auto px-4 md:px-6">
+      <div className="container max-w-6xl m-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl mb-6 font-bold tracking-tighter sm:text-5xl">

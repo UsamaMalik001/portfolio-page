@@ -202,7 +202,7 @@ export function ExperienceSection() {
       id="experience"
       className="relative py-12 md:py-24 lg:py-32 bg-muted/50"
     >
-      <div className="container m-auto px-4 md:px-6">
+      <div className="container max-w-6xl m-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
