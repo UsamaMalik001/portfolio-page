@@ -7,6 +7,7 @@ import { ProjectsSection } from "@/components/component/ProjectsSection";
 import { ContactSection } from "@/components/component/ContactSection";
 import { Footer } from "@/components/component/Footer";
 import { Metadata } from "next";
+import { ReviewsSection } from "@/components/component/Reviews";
 
 export const metadata: Metadata = {
   title: `Umar Farooq - 5+ Years in Web & Mobile Dev`,
@@ -19,6 +20,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <ReviewsSection />
         <ExperienceSection />
         <ProjectsSection />
         <ContactSection />
